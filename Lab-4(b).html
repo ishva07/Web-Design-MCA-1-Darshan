@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center">
+        <form action="#" >
+            <caption><h3>COVID-19 vaccine Registration Form</h3></caption>
+            <tr>
+                <td>
+                    <label for="firstname">First Name </label>
+                </td>
+                
+                <td>
+                    <input type="text" name="name" id="name" pattern="^[a-zA-Z]*$" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname">lastname</label>
+                </td>
+                <td>
+                    <input type="text" name="lastname" id="lastname" pattern="^[a-zA-Z]*$" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="aadharno">Aadhar Number</label>
+                </td>
+                
+                <td>
+                    <input type="text" name="aadharno" id="aadharno" pattern="[0-9 ]{12}"required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="v_name">Vaccine name</label></td>
+                <td>
+                    <select name="v_name" id="v_name">
+                    <option value="0">vaccine1</option>
+                    <option value="1">vaccine2</option>
+                    <option value="2">vaccine3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="centerno">Vaccination Center Name</label></td>
+                <td>
+                    <select name="centerno" id="centerno" required>
+                        <option value="-1">Select Center</option>
+                        <option value="0">Ahmedabad</option>
+                        <option value="1">Surat</option>
+                        <option value="2">Rajkot</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="dose">Date of Dose</label>  </td>
+                <td>  <input type="date" id="dose" name="dose"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="Doseno">Dose Number</label></td>
+                <td>
+                    <input type="number" id="Doseno" name="Doseno" max="5" min="1">
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td colspan="2"><input type="submit" value="submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

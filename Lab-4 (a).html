@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center">
+    <form action="#">
+        <tr align="center">
+            <th>
+                <caption><h2>Student Registration </h2></caption>
+            </th>
+        </tr>
+
+
+        <tr>
+           <td> <label for="fullName">FullName</label></td>
+            <td><input type="text" name="fullname" id="fullname" pattern="^[a-zA-Z ]*$" title="Please Enter Valid Name"></td>
+        </tr>
+
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="phone">Mobile</label></td>
+            <td><input type="text" name="phone" id="phone" pattern="[0-9 ]{10}"></td>    
+        </tr>
+
+        <tr>
+            <td>
+                <label for="address">TextArea</label>
+            </td>
+            <td>
+                <textarea name="address" id="address" cols="20" rows="3"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="address">Nitionality </label>
+            </td>
+            <td>
+                <input type="text" name="nation" id="nation" pattern="^[a-zA-z]*$" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Date">BirthDate</label>
+            </td>
+            <td>
+                <input type="date" name="date" id="date">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="gender">Gender</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" id="gender">Male
+                <input type="radio" name="gender" id="gender">Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="degree">Highest Dgree</label>
+            </td>
+            <td>
+                <select name="degree" id="degree">
+                    <option>Mca</option>
+                    <option>Mtech</option>
+                    <option>Msc</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="cpi"></label>
+                CPI
+            </td>
+            <td>
+                <input type="text" id="cpi" name="cpi" pattern="[0-9]">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="university">University </label>
+            </td>
+            <td>
+                <input type="text" name="university" id="university" pattern="^[a-zA-Z0-9]*$" >
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="passing_year">Passing Year</label></td>
+            <td>
+                <select name="passing_year" id="passing_year">
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </td>
+        </tr>
+    <tr >
+        <td align="center" colspan="2"><input type="Submit" value="Submit">
+    <input type="Submit" value="cancle"></td>
+    </tr>
+    </form>
+</table>
+</body>
+</html>
